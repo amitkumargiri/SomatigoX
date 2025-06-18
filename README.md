@@ -10,7 +10,7 @@ Python: 3.10.11
 # Quick Start
 1. Create & activate a virtualenv
 python -m venv .venv
-source .venv/bin/activate   # PowerShell: .venv\Scripts\Activate.ps1
+source .venv/Scripts/activate   # PowerShell: .venv\Scripts\Activate.ps1
 2. Install dev dependencies
 pip install -e ".[dev]"     # pulls pytest + pyyaml
 3. Run the unit tests
