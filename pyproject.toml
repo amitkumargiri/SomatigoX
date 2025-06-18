@@ -2,7 +2,10 @@
 name = "SomatigoX"
 version = "1.0.0"
 description = "SomatigoX project is started to create simple agent bot to get data and reports from mongo db."
-authors = [{ name = "Amit" }]
+authors = [
+    { name = "Amit Kumar Giri", email = "allyamit@gmail.com" },
+    { name = "Somu Tiwari", email = "" },
+]
 requires-python = ">=3.10"
 
 [project.optional-dependencies]
