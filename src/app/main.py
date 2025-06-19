@@ -1,14 +1,15 @@
-import logging
-
-from app.logging_config import setup_logging
 from app.core.mongo_connector import MongodbConnector
 from app.models.brain_mapper import BrainMapper
 
+import logging
+from app import setup_logging
+
+setup_logging()
+logger = logging.getLogger(__name__)
 
 def main() -> None:
-    setup_logging()  # configure root logger
-    logger = logging.getLogger(__name__)
     logger.info("Application started")
+    logger.info("Hello noobs")
     query = 'collection.find().sort("price", -1).limit(1)'
     sentence = "find item with max price"
     data = {sentence: query}
